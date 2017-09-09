@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>APEX-N</title>
+  <meta name="description" content="">
+  <meta name="author" content="nty.io">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/apex-n.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <div class="container-fluid landing">
+
+    <div class="content">
+      <h3 style="margin-bottom:0.8rem;"> APEX-N </h3>
+      <h4> A modern, simple and customisable ACT OverlayPlugin skin </h4>
+
+      <div id="apex">
+
+        <ol id="overlay">
+          <div id="header-source" style="background: rgba(28, 32, 35, 1);">
+            <div class="header-top">
+              <span class="encountername">Stheno</span>
+              <span class="encounterdps">1468.84</span>
+            </div>
+            <div class="header-bottom">
+              <span class="encountertime" style="color: rgb(41, 148, 247);">Time 00:37</span>
+              <span class="maxhit" style="color: rgb(235, 49, 140);">YOU-Broil-4071</span>
+            </div>
+          </div>
+          <div id="combatant-source" style="background: rgba(255, 255, 255, 1);" class="job-Sch">
+            <span class="dps">994</span>
+            <span class="details">
+    <div class="top"><span class="job-icon"><img src="images/grey/Sch.png" onerror="$(this).attr('src', 'images/grey/error.png');"></span><span class="name">YOU</span>
+            <span class="top-right"><span class="statone override">H: 100%</span><span class="stattwo override">OH: 0%</span></span>
+
+          </div>
+          <div class="bottom"><span class="bar bar-full" style="width: 100%; background-size: 335px;"></span></div>
+          </span>
+      </div>
+      <div id="combatant-source" style="background: rgba(255, 255, 255, 1);">
+        <span class="dps" style=>474</span>
+        <span class="details">
+    <div class="top"><span class="job-icon"><img src="images/grey/chocobo.png" onerror="$(this).attr('src', 'images/grey/error.png');"></span><span class="name">CHOCOBO (YOU)</span>
+        <span class="top-right"><span class="statone override">C: 13%</span><span class="stattwo override">DH: 0%</span></span>
+
+      </div>
+      <div class="bottom"><span class="bar bar-pct" style="width: 47.6459%; background-size: 335px;"></span></div>
+      </span>
+    </div>
+    </ol>
+  </div>
+
+  <div class="down">
+    <a href="#section-one"><i class="fa fa-angle-down scroll" aria-hidden="true"></i></a>
+  </div>
+
+  </div>
+  </div>
+
+  <div id="section-one">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="columns six">
+          <h5>CLASS COLORS</h5>
+
+          <div class="highlight"><img class="drop-shadow raised" src="images/classcolors.png" /></div>
+          <h4 style="color:black;">
+  + Compact version available<br>
+  + Change class colors in config<br>
+
+</h4>
+        </div>
+        <div class="columns six">
+          <h5>EASY CONFIG</h5>
+
+          <div class="highlight"><img class="drop-shadow raised" src="images/config.png" /></div>
+          <h4 style="color:black;">
+  + Easy to understand config<br>
+  + Custom party and limit break options<br>
+
+</h4>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="buttons">
+
+      <a class="button inverse bleft" style="line-height: 32px!important;" href="https://github.com/nettyneets/apex-n">Download page <i class="fa fa-github" style="display: initial;" aria-hidden="true"></i></a>
+      <a class="button inverse" style="line-height: 32px!important;" href="http://nty.io/">Made by Nty.io <i class="fa fa-heart" style="display: initial;" aria-hidden="true"></i></a>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+</body>
+
+</html>

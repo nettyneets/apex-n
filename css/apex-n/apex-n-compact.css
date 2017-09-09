@@ -4,7 +4,7 @@
 
 html {
   /*background-image: url(images/handle.png);*/
-  font-size: 11px;
+  font-size: 10px;
   background-position: bottom right;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -28,18 +28,19 @@ html {
 
 #overlay #header-source {
   max-width: 440px;
-  height: 50px;
+  height: 44px;
   background: #1c2023;
   background: rgba(28, 32, 35, 0.87);
-  padding: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top:18px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 11px;
 }
 
 #overlay .header-top {
-  height: 21px;
-  line-height: 21px;
+  height: 15px;
+  line-height: 15px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -87,6 +88,7 @@ html {
   align-items: center;
   background: white;
   background: rgba(255, 255, 255, 0.77);
+  padding-bottom: 5px;
 }
 
 #combatant-source:nth-child(2) {
@@ -98,9 +100,9 @@ html {
 }
 
 #overlay .dps {
-  height: 30px;
-  font-size: 1.8rem;
-  line-height: 30px;
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
   /*background: linear-gradient(to right, #2994f7, #eb318c);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,25 +112,26 @@ html {
 }
 
 #overlay .details {
-  flex: 4 1 0;
-  height: 30px;
+  flex: 7 1 0;
+  height: 15px;
 }
 
 #overlay .details .top {
-  height: 20px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 #overlay .details .bottom {
-  height: 10px;
-  padding-bottom: 5px;
+  height: 3px;
 }
 
 #overlay .job-icon img {
-  height: 14px;
+  height: 10px;
   display: inline-block;
   margin-right: 5px;
-  vertical-align: middle;
-  margin-bottom: 2px;
+  position: absolute;
+  bottom: 1px;
 }
 
 #overlay .name {
@@ -138,13 +141,15 @@ html {
   overflow: hidden;
   font-weight: 800;
   text-transform: uppercase;
-  line-height: 20px;
+  position: absolute;
+  top: -3px;
+  left: 15px;
 }
 
 #overlay .top-right {
   float: right;
   text-align: right;
-  line-height: 20px;
+  line-height: 9px;
 }
 
 #overlay .statone, #overlay .stattwo {
@@ -178,16 +183,16 @@ ol {
 
 .bar {
   display: block;
-  height: 6px;
+  height: 3px;
 }
 
 #overlay .bar {
   background: linear-gradient(to right, #2994f7, #eb318c);
-  background-size: 335px;
+  background-size: 360px!important;
 }
 
 #overlay .bottom, #overlay .top {
-  margin-right: 1.5rem;
+  margin-right: 10px;
 }
 
 .inactive .bar {

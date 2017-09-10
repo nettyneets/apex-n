@@ -343,3 +343,15 @@
           margin-right: 0;
         }
       }
+      @media (max-width: 400px) {
+        #apex {
+          transform: scale(0.8);
+          width: auto;
+        }
+        #overlay {
+          width: 290px;
+        }
+        #combatant-source {
+          margin-top: -1px;
+        }
+      }

@@ -7,6 +7,8 @@
 - Limit break options
 - Compact version available
 
+[Download here](https://github.com/nettyneets/apex-n/releases)
+
 ## preview
 [nettyneets.github.io/apex-n](https://nettyneets.github.io/apex-n/)
 

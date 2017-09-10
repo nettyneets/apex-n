@@ -343,15 +343,25 @@
           margin-right: 0;
         }
       }
-      @media (max-width: 400px) {
+     @media (max-width: 400px) {
         #apex {
           transform: scale(0.8);
-          width: auto;
         }
         #overlay {
-          width: 290px;
+          width: 280px;
         }
         #combatant-source {
           margin-top: -1px;
         }
       }
+
+      @media (max-width: 350px) {
+        #apex {
+          width: auto;
+        }
+        #overlay {
+          width: 230px;
+        }
+        #combatant-source {
+          margin-top: -1px;
+        }

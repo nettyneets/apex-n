@@ -88,3 +88,11 @@ Class colors and their default values
 ## bugs and suggestions
 
 Please use the Issues tab to report any problems as well as request new features.
+
+## license
+
+Free for personal use. Non-commercial. No derivatives.
+
+You may not use the material for commercial purposes.  If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+Do not re-upload this project, or claim it as your own. If you wish to share it please link to its original page.

@@ -127,7 +127,7 @@ html {
 }
 
 #overlay .job-icon img {
-  height: 10px;
+  height: 11px;
   display: inline-block;
   margin-right: 5px;
   position: absolute;
@@ -142,7 +142,7 @@ html {
   font-weight: 800;
   text-transform: uppercase;
   position: absolute;
-  top: -3px;
+  top: -2px;
   left: 15px;
 }
 

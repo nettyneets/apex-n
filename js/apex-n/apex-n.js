@@ -1,4 +1,6 @@
-// *credit* i used xephero's js as a starting point for this project as it's what i was using before
+// *credit*
+// used xephero's js as a base for this project as it's what i've been using
+// thanks!
 
 $(function() {
   "use strict";
@@ -26,6 +28,9 @@ $(function() {
     return combatant.JobOrName;
   };
 
+  var mharray = [];
+  var dmgarray = [];
+
   function update(e) {
     var encounter = e.detail.Encounter;
     var combatants = e.detail.Combatant;
@@ -33,15 +38,17 @@ $(function() {
     var template = $('#combatant-source');
     var container = $('#overlay').clone();
 
+
     container.html('');
 
     var rdps = parseFloat(encounter.encdps);
     var names = Object.keys(combatants).slice(0, rows - 1);
 
-    var mharray = [];
+
 
     for (var i = 0; i < names.length; i++) {
       var combatant = combatants[names[i]];
+
       var maxHitDmg = (combatant.maxhit).match(/\d/g);
       maxHitDmg = maxHitDmg.join("");
       var splitMaxHit = (combatant.maxhit).split("-");
@@ -50,11 +57,8 @@ $(function() {
       if (combatant.name == "Limit Break") {
         continue;
       }
-      mharray.splice([i], 0, [combatant.name + "-" + maxHitName + "-" + maxHitDmg]);
-      /*mharray.push([combatant.name, combatant.maxhit]);*/
-      /*footer.find('.mhname').text(combatant.name);
-      footer.find('.mhhit').text(combatant.maxhit);*/
-
+      mharray.splice([i], 0, (combatant.name + "-" + maxHitName + "-" + maxHitDmg));
+      dmgarray.splice([i], 0, parseInt(maxHitDmg));
 
 
     };
@@ -75,13 +79,9 @@ $(function() {
       }
 
       return maxIndex;
-    }
+    };
 
-    var maxhitnolb = mharray[indexOfMax(mharray)];
-
-
-
-
+    var maxhitnolb = (mharray[indexOfMax(dmgarray)]);
 
 
 

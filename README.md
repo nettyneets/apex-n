@@ -33,6 +33,8 @@ apex-n-compact.html for the smaller design.
 
 ## config 
 
+Config file = js/apex-n-config.js
+
 To edit the config, do so while ACT isn't running, or copy the config file onto your desktop, edit it there and paste it into the js folder with admin permissions, then simply press Reload overlay in ACT to view the changes.
 
 ###### GENERAL

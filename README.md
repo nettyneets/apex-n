@@ -55,14 +55,14 @@ To edit the config, do so while ACT isn't running, or copy the config file onto 
 
 `var colorOne = "#2994f7";` - First color / Default = #2994f7
 
-`var colorTwo = "#eb318c"` - Second color / Default = #eb318c
+`var colorTwo = "#eb318c";` - Second color / Default = #eb318c
 
 
 ###### IF CLASS COLORS ARE SET TO TRUE
 
 `var classColorOne = "#928DAB";` - First color / Default = #928DAB / Changes "time"
 
-`var classColorTwo = "#928DAB";"` - Second color / Default = #928DAB / Changes "max hit"
+`var classColorTwo = "#928DAB";` - Second color / Default = #928DAB / Changes "max hit"
 
 By default, the two stats displayed (crit/dh or heal/oh) will have the same colors as your class gradients, you can override it here and set them to a uniform color
 

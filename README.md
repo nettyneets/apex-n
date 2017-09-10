@@ -81,3 +81,8 @@ Class colors and their default values
 
 `var classOne = "grey";`
 `var classTwo = "#928DAB";`
+
+
+## bugs and suggestions
+
+Please use the Issues tab to report any problems as well as request new features.

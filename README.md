@@ -23,7 +23,7 @@
 
 ## installation
 
-Unzip the download and copy the contents (4 folders and 2 .html files) of the folder into the ACT installation location\build\resources. eg:
+Unzip the download and copy the contents (4 folders and 3 .html files) of the folder into the ACT installation location\build\resources. eg:
 ```
 C:\Program Files (x86)\Advanced Combat Tracker\Build\resources
 ```

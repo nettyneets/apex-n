@@ -28,8 +28,23 @@ $(function() {
     return combatant.JobOrName;
   };
 
-  var mharray = [];
-  var dmgarray = [];
+  function indexOfMax(arr) {
+    if (arr.length === 0) {
+      return -1;
+    }
+
+    var max = arr[0];
+    var maxIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        maxIndex = i;
+        max = arr[i];
+      }
+    }
+
+    return maxIndex;
+  };
 
   function update(e) {
     var encounter = e.detail.Encounter;
@@ -44,13 +59,13 @@ $(function() {
     var rdps = parseFloat(encounter.encdps);
     var names = Object.keys(combatants).slice(0, rows - 1);
 
-
+    var mharray = [];
+    var dmgarray = [];
 
     for (var i = 0; i < names.length; i++) {
       var combatant = combatants[names[i]];
 
-      var maxHitDmg = (combatant.maxhit).match(/\d/g);
-      maxHitDmg = maxHitDmg.join("");
+      var maxHitDmg = (combatant.maxhit).match(/\d/g).join("");
       var splitMaxHit = (combatant.maxhit).split("-");
       var maxHitName = splitMaxHit[0];
 
@@ -60,31 +75,9 @@ $(function() {
       mharray.splice([i], 0, (combatant.name + "-" + maxHitName + "-" + maxHitDmg));
       dmgarray.splice([i], 0, parseInt(maxHitDmg));
 
+      var maxhitnolb = (mharray[indexOfMax(dmgarray)]);
 
     };
-
-    function indexOfMax(arr) {
-      if (arr.length === 0) {
-        return -1;
-      }
-
-      var max = arr[0];
-      var maxIndex = 0;
-
-      for (var i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-          maxIndex = i;
-          max = arr[i];
-        }
-      }
-
-      return maxIndex;
-    };
-
-    var maxhitnolb = (mharray[indexOfMax(dmgarray)]);
-
-
-
 
     // sanity check
     if (!isNaN(rdps) && rdps != Infinity) {

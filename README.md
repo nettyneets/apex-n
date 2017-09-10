@@ -5,7 +5,7 @@
 - Customisable color schemes
 - Class/job colors
 - Limit break options
-- Compact version available
+- Compact and mini version available
 
 [Download here](https://github.com/nettyneets/apex-n/releases)
 
@@ -16,6 +16,8 @@
 ![Screenshot](https://nettyneets.github.io/apex-n/images/preview.png)
 ###### CLASS COLORS
 ![Screenshot](https://nettyneets.github.io/apex-n/images/classcolors.png)
+###### MINI
+![Screenshot](https://nettyneets.github.io/apex-n/images/mini.png)
 ###### COMPACT
 ![Screenshot](https://nettyneets.github.io/apex-n/images/compact.png)
 

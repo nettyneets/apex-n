@@ -123,11 +123,11 @@
 }
 
 #overlay .job-icon img {
-  height: 14px;
+  height: 16px;
   display: inline-block;
   margin-right: 5px;
   vertical-align: middle;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 #overlay .name {

@@ -101,9 +101,6 @@ html {
   height: 30px;
   font-size: 1.8rem;
   line-height: 30px;
-  /*background: linear-gradient(to right, #2994f7, #eb318c);*/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   flex: 1 1 0;
   text-align: center;
   font-weight: 700;

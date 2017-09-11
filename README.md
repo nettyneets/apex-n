@@ -53,11 +53,15 @@ To edit the config, do so while ACT isn't running, or copy the config file onto 
 
 `var partyLimitBreak = true;` - If set to true, lb will be shown in the party list (note: no "")
 
+`var dpsGradient = true;` - If set to false the dps numbers will display as a single color instead of a gradient
+
 ###### IF CLASS COLORS ARE SET TO FALSE
 
 `var colorOne = "#2994f7";` - First color / Default = #2994f7
 
 `var colorTwo = "#eb318c";` - Second color / Default = #eb318c
+
+`var colorDps = "#2994f7";` - Dps color if gradients set to false
 
 
 ###### IF CLASS COLORS ARE SET TO TRUE
@@ -75,18 +79,19 @@ Class colors and their default values
 
 `var classTankOne = "#396afc";`
 `var classTankTwo = "#36D1DC";`
-
+`var classTankDps = "#36D1DC";`
 
 `var classHealerOne = "#00b09b";`
 `var classHealerTwo = "#96c93d";`
-
+`var classHealerDps = "#96c93d";`
 
 `var classDpsOne = "#4b134f";`
 `var classDpsTwo = "#c94b4b";`
-
+`var classDpsDps = "#c94b4b";`
 
 `var classOne = "grey";`
 `var classTwo = "#928DAB";`
+`var classDps = "#222528";`
 
 
 ## bugs and suggestions

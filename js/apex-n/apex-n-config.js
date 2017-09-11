@@ -17,6 +17,8 @@ var classColors = false;
 var ignoreLimitBreak = true;
 /* Set to true if you want to include Limit Breaks in the party list */
 var partyLimitBreak = true;
+/* Set to false if you want change the dps number to a single color instead of gradient */
+var dpsGradient = true;
 
 /* ----- IF CLASS COLORS ARE SET TO FALSE -----  */
 
@@ -24,7 +26,8 @@ var partyLimitBreak = true;
 var colorOne = "#2994f7";
 /* Second color / Default = #eb318c */
 var colorTwo = "#eb318c";
-
+/* Dps color if gradients set to false / Default = #2994f7 */
+var colorDps = "#2994f7";
 
 /* ----- IF CLASS COLORS ARE SET TO TRUE -----  */
 
@@ -39,12 +42,16 @@ var overrideColor = "#1c2023";
 /* Tank colors */
 var classTankOne = "#396afc";
 var classTankTwo = "#36D1DC";
+var classTankDps = "#36D1DC";
 /* Healer colors */
 var classHealerOne = "#00b09b";
 var classHealerTwo = "#96c93d";
+var classHealerDps = "#96c93d";
 /* Dps colors */
 var classDpsOne = "#4b134f";
 var classDpsTwo = "#c94b4b";
+var classDpsDps = "#c94b4b";
 /* Generic colors for pets and chocobos */
-var classOne = "grey";
+var classOne = "#222528";
 var classTwo = "#928DAB";
+var classDps = "#222528";

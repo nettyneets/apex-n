@@ -65,7 +65,14 @@ $(function() {
     for (var i = 0; i < names.length; i++) {
       var combatant = combatants[names[i]];
 
-      var maxHitDmg = (combatant.maxhit).match(/\d/g).join("");
+	  // maxHitDmg might be null or empty, check before performing join
+      var maxHitDmg = (combatant.maxhit).match(/\d/g);
+	  if(maxHitDmg == null || maxHitDmg == "") {
+		continue;
+	  }
+	  
+	  maxHitDmg = maxHitDmg.join("");
+	  
       var splitMaxHit = (combatant.maxhit).split("-");
       var maxHitName = splitMaxHit[0];
 

@@ -5,7 +5,7 @@
 - Customisable color schemes
 - Class/job colors
 - Limit break options
-- Compact and mini version available
+- Compact, mini and dark version available
 
 [Download here](https://github.com/nettyneets/apex-n/releases)
 
@@ -16,10 +16,12 @@
 ![Screenshot](https://nettyneets.github.io/apex-n/images/preview.png)
 ###### CLASS COLORS
 ![Screenshot](https://nettyneets.github.io/apex-n/images/classcolors.png)
-###### MINI
-![Screenshot](https://nettyneets.github.io/apex-n/images/mini.png)
 ###### COMPACT
 ![Screenshot](https://nettyneets.github.io/apex-n/images/compact.png)
+###### MINI
+![Screenshot](https://nettyneets.github.io/apex-n/images/mini.png)
+###### MINI DARK
+![Screenshot](https://nettyneets.github.io/apex-n/images/minidark.png)
 
 ## installation
 
@@ -27,13 +29,13 @@ Unzip the download and copy the contents (4 folders and 3 .html files) of the fo
 ```
 C:\Program Files (x86)\Advanced Combat Tracker\Build\resources
 ```
-To enable the skin, open ACT and go to the Plugins tab. Select OverlayPlugin.dll, Mini Parse on the left and click the (...) 
+To enable the skin, open ACT and go to the Plugins tab. Select OverlayPlugin.dll, Mini Parse on the left and click the (...)
 
 apex-n.html for the default version, or
 
 apex-n-compact.html for the smaller design.
 
-## config 
+## config
 
 Config file = js/apex-n-config.js
 

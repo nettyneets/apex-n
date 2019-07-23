@@ -1,0 +1,221 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  /*background-image: url(images/handle.png);*/
+  font-size: 10px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: auto;
+  width: 340px;
+  overflow: visible;
+}
+
+#overlay {
+  border-radius: 7px;
+  overflow: visible;
+  box-sizing:border-box;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.41);
+}
+
+#combatant-source {
+  display: none;
+}
+
+#overlay #combatant-source {
+  display: initial;
+}
+
+#overlay #header-source {
+  max-width: 440px;
+  height: 44px;
+  background: #1c2023;
+  background: rgba(28, 32, 35, 0.87);
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 11px;
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+}
+
+#overlay .header-top {
+  height: 15px;
+  line-height: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  font-size: 0.85rem;
+}
+
+#overlay .header-top .encounterdps {
+  float: right;
+  color: #ffffff;
+  text-align: right;
+}
+
+#overlay .header-top .encountername {
+  color: #ffffff;
+}
+
+#overlay .header-bottom {
+  height: 15px;
+  line-height: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  font-size: 0.85rem;
+}
+
+#overlay .header-bottom .maxhit {
+  color: #eb318c;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 6 0 0;
+}
+
+#overlay .header-bottom .maxhitdmg {
+  color: #eb318c;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 3px;
+}
+
+#overlay .header-bottom .encountertime {
+  color: #2994f7;
+  flex: 2 0 0;
+}
+
+#overlay #combatant-source {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #2c2f34;
+  background: rgba(44, 47, 52, 0.77);
+  padding-bottom: 7px;
+  color:#8b8b8c;
+}
+
+#combatant-source:nth-child(2) {
+  padding-top: 7px;
+}
+
+#combatant-source:nth-last-child(1) {
+  padding-bottom: 10px!important;
+  border-bottom-right-radius:7px;
+  border-bottom-left-radius:7px;
+}
+
+#overlay .dps {
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
+  flex: 3 1 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+#overlay .details {
+  flex: 16 1 0;
+  height: 15px;
+}
+
+#overlay .details .top {
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#overlay .details .bottom {
+  height: 3px;
+  margin-top:-1px;
+}
+
+#overlay .job-icon img {
+  height: 11px;
+  display: inline-block;
+  margin-right: 5px;
+  position: absolute;
+  bottom: 3px;
+}
+
+#overlay .name {
+  color: #8b8b8c;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -2px;
+  left: 14px;
+  max-width: 160px;
+  font-size:9px;
+  letter-spacing:0.5px;
+}
+
+#overlay .top-right {
+  float: right;
+  text-align: right;
+  line-height: 9px;
+  font-size: 0.85rem;
+}
+
+#overlay .statone, #overlay .stattwo {
+  font-weight: 700;
+}
+
+#overlay .statone {
+  color: #2994f7;
+}
+
+#overlay .stattwo {
+  color: #eb318c;
+  padding-left: 10px;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  display: block;
+  height: 6px;
+  box-sizing:border-box;
+  border:1px solid #0c0d0e;
+}
+
+#overlay .bar {
+  background: linear-gradient(to right, #2994f7, #eb318c);
+  background-size: 360px!important;
+}
+
+#overlay .bottom, #overlay .top {
+  margin-right: 10px;
+}
+
+.inactive .bar {
+  background-color: transparent;
+}

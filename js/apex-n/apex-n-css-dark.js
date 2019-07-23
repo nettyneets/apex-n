@@ -1,8 +1,8 @@
 $("#overlay") > $("#header-source").css({
-  "background": "rgba(28, 32, 35, " + headerOpacity + ")"
+  "background": "rgba(35, 39, 44, " + headerOpacity + ")"
 });
 $("#overlay") > $("#combatant-source").css({
-  "background": "rgba(255, 255, 255, " + partyOpacity + ")"
+  "background": "rgba(44, 47, 52, " + partyOpacity + ")"
 });
 
 if (classColors == true && dpsGradient == true) {

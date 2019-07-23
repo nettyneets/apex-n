@@ -151,7 +151,7 @@ $(function() {
       }
 
       row.find('.dps').text(dpsn);
-      row.find('.job-icon').html('<img src="images/grey/' + JobOrName(combatant) + '.png" onerror="$(this).attr(\'src\', \'images/grey/error.png\');">');
+      row.find('.job-icon').html('<img src="images/light/' + JobOrName(combatant) + '.png" onerror="$(this).attr(\'src\', \'images/light/error.png\');">');
       row.find('.name').text(combatant.name);
       row.find('.statone').text("C: " + critPct + "%");
       row.find('.stattwo').text("DH: " + combatant.DirectHitPct);

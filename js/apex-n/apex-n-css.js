@@ -30,7 +30,7 @@ if (classColors == true && dpsGradient == true) {
   .job-Drg  .stattwo, .job-Mnk  .stattwo, .job-Nin  .stattwo, .job-Blm  .stattwo, .job-Brd  .stattwo, .job-Smn  .stattwo,\
   .job-Rog  .stattwo, .job-Thm  .stattwo, .job-Arc  .stattwo, .job-Acn  .stattwo, .job-Pgl  .stattwo, .job-Lnc  .stattwo, .job-Mch  .stattwo, .job-Rdm  .stattwo, .job-Sam  .stattwo, .job-Dnc  .stattwo { color: " + classDpsTwo + "!important;}\
   .statone { color: " + classOne + "!important;} .stattwo { color: " + classTwo + "!important;}\
-  .encountertime { color: " + classColorOne + "!important;} .maxhit { color: " + classColorTwo + "!important;}";
+  .encountertime { color: " + classColorOne + "!important;} .maxhit { color: " + classColorTwo + "!important;} .maxhitdmg { color: " + classColorTwo + "!important;}";
 } if (classColors == true && dpsGradient == false) {
   var gradientTank = "background: linear-gradient(to right, " + classTankOne + ", " + classTankTwo + ")";
   var gradientHealer = "background: linear-gradient(to right, " + classHealerOne + ", " + classHealerTwo + ")";
